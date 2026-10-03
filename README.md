@@ -2,7 +2,7 @@
 
 **Tu glucosa, a un vistazo en Windows.**
 
-Última versión: [**GlucoTick 0.8.7**](https://github.com/tiri14/glucotick-releases/releases/tag/v0.8.7).
+Última versión: [**GlucoTick 0.8.8**](https://github.com/tiri14/glucotick-releases/releases/tag/v0.8.8).
 
 GlucoTick muestra las lecturas de tu cuenta de LibreLinkUp junto al reloj de tu PC. Elige cómo verlas, personaliza tus colores y recibe avisos si quieres.
 
@@ -41,6 +41,8 @@ Los instaladores actuales no tienen firma de editor de confianza de Windows. Des
 ## Datos recientes y actualizaciones
 
 Los minutos cuentan desde la hora de la medición y siguen aumentando aunque no lleguen datos nuevos. Después de **más de cinco minutos**, todos los indicadores de glucosa se vuelven **grises**, conservando el último valor y su antigüedad. Revisa el móvil y LibreLinkUp si ocurre.
+
+Comprueba automáticamente nuevas versiones cada 2 horas, con hasta 5 minutos de margen, y al abrir el panel o Actualizaciones. Tú decides cuándo instalarlas.
 
 Una nueva versión se muestra en el panel, el menú de bandeja y, si Windows lo permite, mediante una notificación. En **Ver novedades y descargar** decides cuándo instalar. Puedes ver tamaño, progreso y velocidad; la actualización verifica el paquete y conserva tu cuenta y tus preferencias. Guarda antes los ajustes pendientes.
 
