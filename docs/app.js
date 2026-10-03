@@ -21,3 +21,40 @@ async function latestRelease() {
   } finally {clearTimeout(timeout);}
 }
 latestRelease();
+
+// Progressive enhancement: every screenshot remains visible without JavaScript.
+function enhanceGallery() {
+  const root = document.querySelector('.native-gallery');
+  if (!root) return;
+  const list = root.querySelector('.gallery-tabs');
+  const tabs = [...list.querySelectorAll('[role="tab"]')];
+  const panels = tabs.map(tab => document.getElementById(tab.getAttribute('aria-controls')));
+  if (panels.some(panel => !panel)) return;
+  function select(index, focus) {
+    tabs.forEach((tab, i) => {
+      tab.setAttribute('aria-selected', String(i === index));
+      tab.tabIndex = i === index ? 0 : -1;
+      panels[i].hidden = i !== index;
+      panels[i].setAttribute('role', 'tabpanel');
+      panels[i].tabIndex = 0;
+    });
+    if (focus) tabs[index].focus();
+  }
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => select(index, false));
+    tab.addEventListener('keydown', event => {
+      let next;
+      if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+      if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = tabs.length - 1;
+      if (next === undefined) return;
+      event.preventDefault();
+      select(next, true);
+    });
+  });
+  root.classList.add('gallery-enhanced');
+  list.hidden = false;
+  select(0, false);
+}
+enhanceGallery();
