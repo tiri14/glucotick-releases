@@ -8,6 +8,8 @@ GlucoTick muestra las lecturas de tu cuenta de LibreLinkUp junto al reloj de tu 
 
 <img src="docs/assets/panel-dark.png" width="420" alt="Panel real de GlucoTick con datos ficticios de ejemplo">
 
+[Ver capturas reales en Windows: bandeja, número grande y reloj integrado](https://tiri14.github.io/glucotick-releases/#en-windows). Capturadas en Sandbox con lecturas ficticias.
+
 ## Elige dónde ver la glucosa
 
 - **Bandeja de Windows:** muestra el valor o el icono de GlucoTick. El menú del botón derecho da acceso a vistas, ajustes y actualizaciones.
