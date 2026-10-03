@@ -2,13 +2,15 @@
 
 **Tu glucosa, a un vistazo en Windows.**
 
+Última versión: [**GlucoTick 0.8.7**](https://github.com/tiri14/glucotick-releases/releases/tag/v0.8.7).
+
 GlucoTick muestra las lecturas de tu cuenta de LibreLinkUp junto al reloj de tu PC. Elige cómo verlas, personaliza tus colores y recibe avisos si quieres.
 
 **[Descubre GlucoTick y sus capturas](https://tiri14.github.io/glucotick-releases/)** · **[Descargar la última versión para Windows](https://github.com/tiri14/glucotick-releases/releases/latest)**
 
 <img src="docs/assets/panel-dark.png" width="420" alt="Panel real de GlucoTick con datos ficticios de ejemplo">
 
-[Ver capturas reales en Windows: bandeja, número grande y reloj integrado](https://tiri14.github.io/glucotick-releases/#en-windows). Capturadas en Sandbox con lecturas ficticias.
+[Ver capturas reales en Windows: reloj integrado, número grande, bandeja y logo](https://tiri14.github.io/glucotick-releases/#en-windows). Capturadas en Sandbox con lecturas ficticias.
 
 ## Elige dónde ver la glucosa
 
