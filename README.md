@@ -4,13 +4,23 @@
 
 Última versión: [**GlucoTick 0.8.8**](https://github.com/tiri14/glucotick-releases/releases/tag/v0.8.8).
 
-GlucoTick muestra las lecturas de tu cuenta de LibreLinkUp junto al reloj de tu PC. Elige cómo verlas, personaliza tus colores y recibe avisos si quieres.
+GlucoTick es un visor de glucosa para Windows pensado para acompañar el seguimiento diario de personas con diabetes que utilizan **FreeStyle Libre de Abbott**, con un sistema y una app compatibles con **LibreLinkUp**. Muestra las lecturas compartidas junto al reloj del PC. También pueden usarlo familiares o cuidadores autorizados para ver las lecturas de una persona.
 
 **[Descubre GlucoTick y sus capturas](https://tiri14.github.io/glucotick-releases/)** · **[Descargar la última versión para Windows](https://github.com/tiri14/glucotick-releases/releases/latest)**
 
 <img src="docs/assets/panel-dark.png" width="420" alt="Panel real de GlucoTick con datos ficticios de ejemplo">
 
 [Ver capturas reales en Windows: reloj integrado, número grande, bandeja y logo](https://tiri14.github.io/glucotick-releases/#en-windows). Capturadas en Sandbox con lecturas ficticias.
+
+## ¿Cómo llegan las lecturas al PC?
+
+**Sensor FreeStyle Libre → app compatible de FreeStyle Libre en el móvil → LibreLinkUp → GlucoTick en Windows.**
+
+- La app oficial del móvil recibe las lecturas del sensor y permite compartirlas con una cuenta de LibreLinkUp. [Abbott explica la conexión remota](https://pro.freestyle.abbott/es-es/bienvenida/sistema-freestyle-libre/digital-health-solutions/libreview/conexion-remota.html).
+- LibreLinkUp recibe las lecturas compartidas después de aceptar una invitación. Es distinta de la app que utilizas con el sensor. [Guía oficial de conexión](https://www.librelinkup.com/articles/getting-started).
+- GlucoTick consulta la cuenta de LibreLinkUp con permiso para ver esas lecturas. No se conecta directamente al sensor por Bluetooth o USB. El móvil que envía los datos y el PC necesitan Internet; el PC no necesita estar junto al sensor.
+
+**Antes de instalar:** comprueba que la lectura ya aparece en la app oficial LibreLinkUp. La compatibilidad depende del sistema, app, móvil y región; tener un sensor FreeStyle Libre no garantiza por sí solo que los datos estén disponibles en LibreLinkUp. Consulta la [información oficial de LibreLinkUp](https://www.librelinkup.com/). GlucoTick no promete compatibilidad con todos los sensores ni con otras marcas.
 
 ## Elige dónde ver la glucosa
 
@@ -22,9 +32,10 @@ GlucoTick muestra las lecturas de tu cuenta de LibreLinkUp junto al reloj de tu 
 ## Instala y conecta
 
 1. Abre la [última publicación](https://github.com/tiri14/glucotick-releases/releases/latest) y descarga **GlucoTick-Setup-VERSIÓN.exe**. Ejecútalo y sigue el asistente. No necesitas extraer el ZIP; los archivos automáticos «Source code» no son instaladores.
-2. Comprueba que ves las lecturas en LibreLinkUp y que has aceptado la invitación de seguimiento.
-3. En GlucoTick, abre **Ajustes → Cuenta**, pulsa **Conectar y comprobar cuenta**, selecciona la persona y guarda los ajustes.
-4. Elige tus vistas en **Visualización**. Puedes configurar el reloj más adelante.
+2. En la app de FreeStyle Libre del móvil, busca **Compartir / Aplicaciones conectadas → LibreLinkUp → Añadir conexión**. El nombre del menú puede variar según la app y la región. Envía la invitación al correo de la cuenta que recibirá las lecturas.
+3. En la app oficial **LibreLinkUp**, crea o inicia sesión en la cuenta receptora, verifica el correo, acepta las condiciones y la invitación. Comprueba que ves la persona y su lectura.
+4. En GlucoTick, abre **Ajustes → Cuenta**, introduce el correo y contraseña de esa cuenta de **LibreLinkUp**, pulsa **Conectar y comprobar cuenta**, selecciona la persona y guarda los ajustes. No basta con disponer de una cuenta del sensor si no tiene acceso a las lecturas compartidas.
+5. Elige tus vistas en **Visualización**. Puedes configurar el reloj más adelante.
 
 **Requisitos:** Windows 10 versión 2004 o posterior, o Windows 11; PC x64; .NET Framework 4.8; Internet; cuenta de LibreLinkUp con acceso a las lecturas. La integración con Windhawk requiere Windows 11 x64: primera preparación de hasta 313 MiB, 4 GB libres y posible permiso de administrador.
 
@@ -57,6 +68,6 @@ El acceso se guarda cifrado para tu usuario de Windows. Las lecturas y la gráfi
 - [Todas las versiones y sus novedades](https://github.com/tiri14/glucotick-releases/releases)
 - [Comunicar un problema](https://github.com/tiri14/glucotick-releases/issues): indica versión y Windows; evita datos personales, lecturas, credenciales y registros sin revisar.
 
-GlucoTick es un **visor complementario independiente de Abbott**. Conserva la aplicación y las alarmas oficiales de Libre. Libre y LibreLinkUp son marcas de sus respectivos titulares.
+GlucoTick es un **visor complementario independiente: no es una aplicación oficial de Abbott**. No sustituye al sistema FreeStyle Libre, a sus alarmas ni a las indicaciones de tu equipo sanitario. No calcula dosis de insulina. Consulta tu dispositivo o app principal para las decisiones de tratamiento; las lecturas compartidas pueden llegar con retraso y los avisos de Windows pueden silenciarse. La propia [información de uso de LibreLinkUp](https://www.librelinkup.com/) señala que no es un monitor principal de glucosa. FreeStyle, Libre y sus marcas relacionadas pertenecen a Abbott.
 
 Este repositorio contiene descargas públicas, documentación y la web. El código C# principal permanece privado. Las capturas muestran datos ficticios.
