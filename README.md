@@ -1,6 +1,6 @@
 # GlucoTick
 
-**Tu glucosa, a un vistazo en Windows.**
+**Glucosa en la barra de tareas de Windows, mediante LibreLinkUp.**
 
 Última versión: [**GlucoTick 0.8.9**](https://github.com/tiri14/glucotick-releases/releases/tag/v0.8.9).
 
@@ -11,6 +11,14 @@ GlucoTick es un visor de glucosa para Windows pensado para acompañar el seguimi
 <img src="docs/assets/panel-dark.png" width="420" alt="Panel real de GlucoTick con datos ficticios de ejemplo">
 
 [Ver capturas reales en Windows: reloj integrado, número grande, bandeja y logo](https://tiri14.github.io/glucotick-releases/#en-windows). Capturadas en Sandbox con lecturas ficticias.
+
+## Guías de Windows
+
+- [LibreLinkUp en Windows: instalación y primera lectura](https://tiri14.github.io/glucotick-releases/librelinkup-windows.html)
+- [Glucosa en la barra de tareas: bandeja, número grande y reloj](https://tiri14.github.io/glucotick-releases/glucosa-barra-tareas-windows.html)
+- [Ayuda con cuenta, lecturas y reloj](https://tiri14.github.io/glucotick-releases/ayuda.html)
+- [Demostración con datos ficticios](https://tiri14.github.io/glucotick-releases/demo.html)
+- [English website and guides](https://tiri14.github.io/glucotick-releases/en/): the Windows app is currently in Spanish.
 
 ## ¿Cómo llegan las lecturas al PC?
 
