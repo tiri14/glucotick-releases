@@ -2,7 +2,9 @@
 
 **Glucosa en la barra de tareas de Windows, mediante LibreLinkUp.**
 
-Última versión: [**GlucoTick 0.8.9**](https://github.com/tiri14/glucotick-releases/releases/tag/v0.8.9).
+Última versión: [**GlucoTick 0.8.10**](https://github.com/tiri14/glucotick-releases/releases/tag/v0.8.10).
+
+La versión 0.8.10 corrige una interrupción de las lecturas: si LibreLinkUp devuelve temporalmente una lista vacía de conexiones, GlucoTick reintenta automáticamente y recupera las lecturas cuando la conexión vuelve a estar disponible. Durante la espera mantiene la última lectura en gris con su antigüedad.
 
 GlucoTick es un visor de glucosa para Windows pensado para acompañar el seguimiento diario de personas con diabetes que utilizan **FreeStyle Libre de Abbott**, con un sistema y una app compatibles con **LibreLinkUp**. Muestra las lecturas compartidas junto al reloj del PC. También pueden usarlo familiares o cuidadores autorizados para ver las lecturas de una persona.
 
