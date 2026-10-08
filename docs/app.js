@@ -13,9 +13,18 @@ async function latestRelease() {
     const url = new URL(asset.browser_download_url);
     if (url.origin !== 'https://github.com' || url.pathname !== `/tiri14/glucotick-releases/releases/download/${release.tag_name}/${asset.name}` || url.search || url.hash) return;
     document.querySelectorAll('.download').forEach(link => {link.href = url.href;});
-    const size = new Intl.NumberFormat('es', {maximumFractionDigits: 1}).format(asset.size / 1048576);
+    const en = document.documentElement.lang === 'en';
+    const size = new Intl.NumberFormat(en ? 'en' : 'es', {maximumFractionDigits: 1}).format(asset.size / 1048576);
     const info = document.getElementById('release-info');
-    if (info) info.textContent = `Versión ${version} · ${size} MiB · Windows x64 · Gratis`;
+    if (info) info.textContent = en ? `Version ${version} · ${size} MiB · Windows x64 · Free` : `Versión ${version} · ${size} MiB · Windows x64 · Gratis`;
+    const schema = document.querySelector('script[type="application/ld+json"]');
+    if (schema) {
+      const data = JSON.parse(schema.textContent);
+      if (data['@type'] === 'SoftwareApplication') {
+        data.softwareVersion = version;
+        schema.textContent = JSON.stringify(data);
+      }
+    }
   } catch (_) {
     // The HTML links remain usable without JavaScript or API access.
   } finally {clearTimeout(timeout);}
