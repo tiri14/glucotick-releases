@@ -2,9 +2,11 @@
 
 **Glucosa en la barra de tareas de Windows, mediante LibreLinkUp.**
 
-Última versión: [**GlucoTick 0.8.12**](https://github.com/tiri14/glucotick-releases/releases/tag/v0.8.12).
+Última versión: [**GlucoTick 0.8.13**](https://github.com/tiri14/glucotick-releases/releases/tag/v0.8.13).
 
-La versión 0.8.12 también actualiza Windhawk 2.0 alpha 6 ya instalado a alpha 7 durante la instalación de GlucoTick, mediante el instalador oficial verificado por SHA-256. Windows puede pedir permiso de administrador. Se conservan los mods y los ajustes; si la integración estaba activa, se comprueba después de actualizar. Sin Windhawk, la integración sigue siendo opcional. Cada versión de GlucoTick usa la distribución más reciente revisada y probada para esa edición.
+La versión 0.8.13 mantiene una ventana de progreso abierta durante la actualización desde GlucoTick, aunque el cliente se cierre. Informa de los pasos y deja el resultado visible hasta pulsar Finalizar. Mientras Windhawk se prepara, el reloj puede volver temporalmente a su aspecto normal.
+
+La versión 0.8.13 también actualiza Windhawk 2.0 alpha 6 ya instalado a alpha 7 durante la instalación de GlucoTick, mediante el instalador oficial verificado por SHA-256. Windows puede pedir permiso de administrador. Se conservan los mods y los ajustes; si la integración estaba activa, se comprueba después de actualizar. Sin Windhawk, la integración sigue siendo opcional. Cada versión de GlucoTick usa la distribución más reciente revisada y probada para esa edición.
 
 GlucoTick es un visor de glucosa para Windows pensado para acompañar el seguimiento diario de personas con diabetes que utilizan **FreeStyle Libre de Abbott**, con un sistema y una app compatibles con **LibreLinkUp**. Muestra las lecturas compartidas junto al reloj del PC. También pueden usarlo familiares o cuidadores autorizados para ver las lecturas de una persona.
 
